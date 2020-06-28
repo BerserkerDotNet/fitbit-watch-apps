@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
+  "rushVersion": "5.27.0",
+  "pnpmVersion": "4.12.5",
+  "pnpmOptions": {
+  },
+  "nodeSupportedVersionRange": ">=12.13.0 <13.0.0",
+  "projects": [
+    {
+      "packageName": "@berserkerdotnet/common-constants",
+      "projectFolder": "packages/common-constants",
+      "shouldPublish": false
+    },
+    {
+      "packageName": "@berserkerdotnet/settings-transmitter",
+      "projectFolder": "packages/settings-transmitter",
+      "shouldPublish": false
+    },
+    {
+      "packageName": "@berserkerdotnet/app-settings",
+      "projectFolder": "packages/app-settings",
+      "shouldPublish": false
+    },
+    {
+      "packageName": "@berserkerdotnet/app-stats",
+      "projectFolder": "packages/app-stats",
+      "shouldPublish": false
+    },
+    {
+      "packageName": "@berserkerdotnet/app-clock",
+      "projectFolder": "packages/app-clock",
+      "shouldPublish": false
+    },
+    {
+      "packageName": "rainier-reflection-lake-clock",
+      "projectFolder": "clocks/rainier-reflection-lake-clock",
+      "shouldPublish": false
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "@berserkerdotnet/app-settings",
+  "version": "1.0.0",
+  "author": "Andrii Snihyr",
+  "license": "GPL-3.0",
+  "main": "./lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {
+    "typescript": "^3.8.3",
+    "fitbit-sdk-types": "^4.3.8"
+  },
+  "scripts": {
+    "build": "tsc"
+  }
+}

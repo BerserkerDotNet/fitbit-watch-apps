@@ -1,0 +1,32 @@
+{
+  "name": "gray-jay-clock",
+  "version": "0.1.0",
+  "license": "GPL-3.0",
+  "fitbit": {
+    "appUUID": "09d93fb4-b067-433b-a5a0-59f47e96aac1",
+    "appType": "clockface",
+    "appDisplayName": "Gray Jay Clock",
+    "appClusterID": "com.berserkerdotnet.apps",
+    "developerID": "4190a52e-e242-40e5-bd10-582bd27a6d99",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#ffffff",
+    "requestedPermissions": [
+      "access_internet",
+      "access_heart_rate",
+      "access_activity",
+      "access_app_cluster_storage"
+    ],
+    "buildTargets": [
+      "higgs",
+      "meson",
+      "gemini",
+      "mira"
+    ],
+    "i18n": {},
+    "defaultLanguage": "en-US"
+  },
+  "scripts": {
+    "build": "fitbit-build",
+    "debug": "fitbit"
+  }
+}

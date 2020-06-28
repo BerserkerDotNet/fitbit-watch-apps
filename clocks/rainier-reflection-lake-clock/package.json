@@ -1,0 +1,44 @@
+{
+  "name": "rainier-reflection-lake-clock",
+  "version": "0.1.0",
+  "license": "GPL-3.0",
+  "fitbit": {
+    "appUUID": "b0b3463a-9839-4724-b82a-da4e32a53294",
+    "appType": "clockface",
+    "appDisplayName": "Rainier Reflection Lake Clock",
+    "appClusterID": "com.berserkerdotnet.apps",
+    "developerID": "4190a52e-e242-40e5-bd10-582bd27a6d99",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#ffffff",
+    "requestedPermissions": [
+      "access_internet",
+      "access_heart_rate",
+      "access_activity",
+      "access_app_cluster_storage"
+    ],
+    "buildTargets": [
+      "higgs",
+      "meson",
+      "gemini",
+      "mira"
+    ],
+    "i18n": {},
+    "defaultLanguage": "en-US"
+  },
+  "dependencies": {
+    "@berserkerdotnet/common-constants": "^1.0.0",
+    "@berserkerdotnet/settings-transmitter": "^1.0.0",
+    "@berserkerdotnet/app-settings": "^1.0.0",
+    "@berserkerdotnet/app-stats": "^1.0.0",
+    "@berserkerdotnet/app-clock": "^1.0.0"
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "~4.1.0",
+    "@fitbit/sdk-cli": "^1.7.2",
+    "fitbit-sdk-types": "^4.3.8"
+  },
+  "scripts": {
+    "build": "fitbit-build",
+    "debug": "fitbit"
+  }
+}

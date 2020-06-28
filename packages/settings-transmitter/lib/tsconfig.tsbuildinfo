@@ -1,0 +1,312 @@
+{
+  "program": {
+    "fileInfos": {
+      "../../../common/temp/node_modules/.pnpm/registry.npmjs.org/typescript/3.9.5/node_modules/typescript/lib/lib.es5.d.ts": {
+        "version": "70ae6416528e68c2ee7b62892200d2ca631759943d4429f8b779b947ff1e124d",
+        "signature": "70ae6416528e68c2ee7b62892200d2ca631759943d4429f8b779b947ff1e124d",
+        "affectsGlobalScope": true
+      },
+      "../../../common/temp/node_modules/.pnpm/registry.npmjs.org/typescript/3.9.5/node_modules/typescript/lib/lib.es2015.d.ts": {
+        "version": "dc47c4fa66b9b9890cf076304de2a9c5201e94b740cffdf09f87296d877d71f6",
+        "signature": "dc47c4fa66b9b9890cf076304de2a9c5201e94b740cffdf09f87296d877d71f6",
+        "affectsGlobalScope": false
+      },
+      "../../../common/temp/node_modules/.pnpm/registry.npmjs.org/typescript/3.9.5/node_modules/typescript/lib/lib.es2015.core.d.ts": {
+        "version": "63e0cc12d0f77394094bd19e84464f9840af0071e5b9358ced30511efef1d8d2",
+        "signature": "63e0cc12d0f77394094bd19e84464f9840af0071e5b9358ced30511efef1d8d2",
+        "affectsGlobalScope": true
+      },
+      "../../../common/temp/node_modules/.pnpm/registry.npmjs.org/typescript/3.9.5/node_modules/typescript/lib/lib.es2015.collection.d.ts": {
+        "version": "43fb1d932e4966a39a41b464a12a81899d9ae5f2c829063f5571b6b87e6d2f9c",
+        "signature": "43fb1d932e4966a39a41b464a12a81899d9ae5f2c829063f5571b6b87e6d2f9c",
+        "affectsGlobalScope": true
+      },
+      "../../../common/temp/node_modules/.pnpm/registry.npmjs.org/typescript/3.9.5/node_modules/typescript/lib/lib.es2015.generator.d.ts": {
+        "version": "cdccba9a388c2ee3fd6ad4018c640a471a6c060e96f1232062223063b0a5ac6a",
+        "signature": "cdccba9a388c2ee3fd6ad4018c640a471a6c060e96f1232062223063b0a5ac6a",
+        "affectsGlobalScope": true
+      },
+      "../../../common/temp/node_modules/.pnpm/registry.npmjs.org/typescript/3.9.5/node_modules/typescript/lib/lib.es2015.iterable.d.ts": {
+        "version": "42f5e41e5893da663dbf0394268f54f1da4b43dc0ddd2ea4bf471fe5361d6faf",
+        "signature": "42f5e41e5893da663dbf0394268f54f1da4b43dc0ddd2ea4bf471fe5361d6faf",
+        "affectsGlobalScope": true
+      },
+      "../../../common/temp/node_modules/.pnpm/registry.npmjs.org/typescript/3.9.5/node_modules/typescript/lib/lib.es2015.promise.d.ts": {
+        "version": "0b7a905675e6cb4211c128f0a3aa47d414b275180a299a9aad5d3ec298abbfc4",
+        "signature": "0b7a905675e6cb4211c128f0a3aa47d414b275180a299a9aad5d3ec298abbfc4",
+        "affectsGlobalScope": true
+      },
+      "../../../common/temp/node_modules/.pnpm/registry.npmjs.org/typescript/3.9.5/node_modules/typescript/lib/lib.es2015.proxy.d.ts": {
+        "version": "dfff68b3c34338f6b307a25d4566de15eed7973b0dc5d69f9fde2bcac1c25315",
+        "signature": "dfff68b3c34338f6b307a25d4566de15eed7973b0dc5d69f9fde2bcac1c25315",
+        "affectsGlobalScope": true
+      },
+      "../../../common/temp/node_modules/.pnpm/registry.npmjs.org/typescript/3.9.5/node_modules/typescript/lib/lib.es2015.reflect.d.ts": {
+        "version": "cb609802a8698aa28b9c56331d4b53f590ca3c1c3a255350304ae3d06017779d",
+        "signature": "cb609802a8698aa28b9c56331d4b53f590ca3c1c3a255350304ae3d06017779d",
+        "affectsGlobalScope": true
+      },
+      "../../../common/temp/node_modules/.pnpm/registry.npmjs.org/typescript/3.9.5/node_modules/typescript/lib/lib.es2015.symbol.d.ts": {
+        "version": "3013574108c36fd3aaca79764002b3717da09725a36a6fc02eac386593110f93",
+        "signature": "3013574108c36fd3aaca79764002b3717da09725a36a6fc02eac386593110f93",
+        "affectsGlobalScope": true
+      },
+      "../../../common/temp/node_modules/.pnpm/registry.npmjs.org/typescript/3.9.5/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts": {
+        "version": "4670208dd7da9d6c774ab1b75c1527a810388c7989c4905de6aaea8561cb9dce",
+        "signature": "4670208dd7da9d6c774ab1b75c1527a810388c7989c4905de6aaea8561cb9dce",
+        "affectsGlobalScope": true
+      },
+      "../../common-constants/lib/index.d.ts": {
+        "version": "5bffedca950c8b68c659c301ddcf845ab008315e36d4dfedc9ea8e12526253b5",
+        "signature": "5bffedca950c8b68c659c301ddcf845ab008315e36d4dfedc9ea8e12526253b5",
+        "affectsGlobalScope": false
+      },
+      "../src/compainion/settingstransmitter.ts": {
+        "version": "dadfe793bf2e0b160eec05409e3d78965ce27021d1c73d1fe2cbeba5e002647f",
+        "signature": "6d6a796a9527aae87b143ba37b84df92a7dfb34fa74c6a04a666df6e0570a17c",
+        "affectsGlobalScope": false
+      },
+      "../src/index.ts": {
+        "version": "0fb84af8dbe8a06dacb2e88f3f91d1a2c92f1ef1fd62abd1d157ce2b2be236f4",
+        "signature": "9d7a190f2ce650efa5757dd2eb344b31739e4f4f2ca36a88eda06c50501d6d37",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/fitbit-sdk-types/types/companion/app-cluster-storage.d.ts": {
+        "version": "9c8cfdb960da446895b35e9007da718484153d8ab9e4f75ad7aee75d2f0ccebb",
+        "signature": "9c8cfdb960da446895b35e9007da718484153d8ab9e4f75ad7aee75d2f0ccebb",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/fitbit-sdk-types/types/companion/blob.d.ts": {
+        "version": "6c0a576029b64fb005401be3494672c794d8507af018f041e3ba1f71ebf40005",
+        "signature": "6c0a576029b64fb005401be3494672c794d8507af018f041e3ba1f71ebf40005",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/fitbit-sdk-types/types/companion/calendars.d.ts": {
+        "version": "29d87a05537020d0ef995ff637ddc58a1599de425617b69783e7cdfadfaf281e",
+        "signature": "29d87a05537020d0ef995ff637ddc58a1599de425617b69783e7cdfadfaf281e",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/fitbit-sdk-types/types/companion/companion.d.ts": {
+        "version": "f8dbeb566cbd1bc55b0906639e87f451ca3f7a2ef75a1eac39d6a3bdae7c63fa",
+        "signature": "f8dbeb566cbd1bc55b0906639e87f451ca3f7a2ef75a1eac39d6a3bdae7c63fa",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/fitbit-sdk-types/types/companion/crypto.d.ts": {
+        "version": "b95cc09a8eb853c23419dea247e3978d1c3a2cfb48f26a7651d5450c496fd18a",
+        "signature": "b95cc09a8eb853c23419dea247e3978d1c3a2cfb48f26a7651d5450c496fd18a",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/fitbit-sdk-types/types/companion/fetch.d.ts": {
+        "version": "fc8c2d9d451c515ea59732d457f42d1515e08b86cbb76498af327a571a2e5096",
+        "signature": "fc8c2d9d451c515ea59732d457f42d1515e08b86cbb76498af327a571a2e5096",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/fitbit-sdk-types/types/companion/file-transfer.d.ts": {
+        "version": "ad211e12159761c8de8a6dc222f307646bdd104c4bf65ebc2df80dce668fc153",
+        "signature": "ad211e12159761c8de8a6dc222f307646bdd104c4bf65ebc2df80dce668fc153",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/fitbit-sdk-types/types/companion/host.d.ts": {
+        "version": "83b3bfd49ffdcbf4b883feb417bfd1963964ee7183a076f0a158285579264ce9",
+        "signature": "83b3bfd49ffdcbf4b883feb417bfd1963964ee7183a076f0a158285579264ce9",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/fitbit-sdk-types/types/companion/image.d.ts": {
+        "version": "f8839ae275fe0e26954fc194deb2f7605b3e5851fc1c2cb6935ccada67781c26",
+        "signature": "f8839ae275fe0e26954fc194deb2f7605b3e5851fc1c2cb6935ccada67781c26",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/fitbit-sdk-types/types/shared/cbor.d.ts": {
+        "version": "f8a92455fb0f6101e69c5b1e979b8156dbd93dfaa130b13a6ac3d76d601878ca",
+        "signature": "f8a92455fb0f6101e69c5b1e979b8156dbd93dfaa130b13a6ac3d76d601878ca",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/fitbit-sdk-types/types/shared/console.d.ts": {
+        "version": "e14c00a7e0195522d9d737d41f26376cfe8aa13efd7a59be64b17f258f866c32",
+        "signature": "e14c00a7e0195522d9d737d41f26376cfe8aa13efd7a59be64b17f258f866c32",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/fitbit-sdk-types/types/shared/device.d.ts": {
+        "version": "16e0e44f4db315ad8ad2a27edefc22088302a8045e4fa345dcf1b544b831324d",
+        "signature": "16e0e44f4db315ad8ad2a27edefc22088302a8045e4fa345dcf1b544b831324d",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/fitbit-sdk-types/types/shared/event.d.ts": {
+        "version": "169f2e5bed5a165a08993b7465578bec37d0de48354f709c5eacef2b28531337",
+        "signature": "169f2e5bed5a165a08993b7465578bec37d0de48354f709c5eacef2b28531337",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/fitbit-sdk-types/types/shared/geolocation.d.ts": {
+        "version": "c9bd44992311a82a18d927b532a4a016b2c0a172dfeb9184f7e3594a07406ab5",
+        "signature": "c9bd44992311a82a18d927b532a4a016b2c0a172dfeb9184f7e3594a07406ab5",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/fitbit-sdk-types/types/shared/globals.d.ts": {
+        "version": "44e8296b389147972b39701295639aa1e00b88f737707624cf1e47704995aea2",
+        "signature": "44e8296b389147972b39701295639aa1e00b88f737707624cf1e47704995aea2",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/fitbit-sdk-types/types/shared/i18n.d.ts": {
+        "version": "3a721f07a967417ca1cbaf22782e60a637b9fca5de56a0b8bce732dc2b285859",
+        "signature": "3a721f07a967417ca1cbaf22782e60a637b9fca5de56a0b8bce732dc2b285859",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/fitbit-sdk-types/types/shared/messaging.d.ts": {
+        "version": "61e6995099a74b52136cceb7d2d6725fd3e96a4d413933c1686abb4ec5427678",
+        "signature": "61e6995099a74b52136cceb7d2d6725fd3e96a4d413933c1686abb4ec5427678",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/fitbit-sdk-types/types/shared/permissions.d.ts": {
+        "version": "72d649bd93fce43ed064e518b9ed7ecff1e4f95b7d7434f34c4c5e5e2b31dd0d",
+        "signature": "72d649bd93fce43ed064e518b9ed7ecff1e4f95b7d7434f34c4c5e5e2b31dd0d",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/fitbit-sdk-types/types/companion/index.d.ts": {
+        "version": "6a35f80115b3d5b6bf1929a0f107e79e81fbdfc94d6829738aac0c33ed941942",
+        "signature": "6a35f80115b3d5b6bf1929a0f107e79e81fbdfc94d6829738aac0c33ed941942",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/fitbit-sdk-types/types/companion/live-storage.d.ts": {
+        "version": "edf6c3407af6f027e8825cbe15b43bc2cef915c292f2e2d00a4404baa3fd2e96",
+        "signature": "edf6c3407af6f027e8825cbe15b43bc2cef915c292f2e2d00a4404baa3fd2e96",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/fitbit-sdk-types/types/companion/local-storage.d.ts": {
+        "version": "18bbe19e895b30ffe1e4482bf023bbd61d9212d90e828702e50f5ed0a4e6f96b",
+        "signature": "18bbe19e895b30ffe1e4482bf023bbd61d9212d90e828702e50f5ed0a4e6f96b",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/fitbit-sdk-types/types/companion/peer.d.ts": {
+        "version": "ad338dd83f6cce3e0a3aa3b6483ae556b535f00bfb13296221c28ea57e8c6c8f",
+        "signature": "ad338dd83f6cce3e0a3aa3b6483ae556b535f00bfb13296221c28ea57e8c6c8f",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/fitbit-sdk-types/types/companion/settings.d.ts": {
+        "version": "a54cbd359c1e1dbfb064447746466d6ae70e2acc716d2151b5d7b6072c771aee",
+        "signature": "a54cbd359c1e1dbfb064447746466d6ae70e2acc716d2151b5d7b6072c771aee",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/fitbit-sdk-types/types/companion/storage.d.ts": {
+        "version": "95084b60bff6c443052eadc5310fd31913ad50c874cc3c9a8f4840a6cf680d52",
+        "signature": "95084b60bff6c443052eadc5310fd31913ad50c874cc3c9a8f4840a6cf680d52",
+        "affectsGlobalScope": true
+      },
+      "../node_modules/fitbit-sdk-types/types/companion/user-settings.d.ts": {
+        "version": "4ba0ee24a5924d5e45391d7e456a2a724f0ae2f87ce6f85769f8a9039837ec64",
+        "signature": "4ba0ee24a5924d5e45391d7e456a2a724f0ae2f87ce6f85769f8a9039837ec64",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/fitbit-sdk-types/types/companion/web-socket.d.ts": {
+        "version": "b100f2a33c3798319f5fcb73fd808a96b3f0199f124af1996ea653ccba8f2ac9",
+        "signature": "b100f2a33c3798319f5fcb73fd808a96b3f0199f124af1996ea653ccba8f2ac9",
+        "affectsGlobalScope": true
+      }
+    },
+    "options": {
+      "module": 99,
+      "target": 2,
+      "lib": [
+        "lib.es2015.d.ts"
+      ],
+      "sourceMap": true,
+      "moduleResolution": 2,
+      "declaration": true,
+      "declarationMap": true,
+      "downlevelIteration": true,
+      "forceConsistentCasingInFileNames": true,
+      "noImplicitReturns": true,
+      "noImplicitThis": true,
+      "noImplicitAny": true,
+      "strictNullChecks": true,
+      "suppressImplicitAnyIndexErrors": true,
+      "noUnusedLocals": true,
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "incremental": true,
+      "strictBindCallApply": true,
+      "outDir": "./",
+      "configFilePath": "../tsconfig.json"
+    },
+    "referencedMap": {
+      "../node_modules/fitbit-sdk-types/types/companion/index.d.ts": [
+        "../node_modules/fitbit-sdk-types/types/shared/cbor.d.ts",
+        "../node_modules/fitbit-sdk-types/types/shared/console.d.ts",
+        "../node_modules/fitbit-sdk-types/types/shared/device.d.ts",
+        "../node_modules/fitbit-sdk-types/types/shared/event.d.ts",
+        "../node_modules/fitbit-sdk-types/types/shared/geolocation.d.ts",
+        "../node_modules/fitbit-sdk-types/types/shared/globals.d.ts",
+        "../node_modules/fitbit-sdk-types/types/shared/i18n.d.ts",
+        "../node_modules/fitbit-sdk-types/types/shared/messaging.d.ts",
+        "../node_modules/fitbit-sdk-types/types/shared/permissions.d.ts"
+      ],
+      "../src/compainion/settingstransmitter.ts": [
+        "../../common-constants/lib/index.d.ts",
+        "../node_modules/fitbit-sdk-types/types/companion/companion.d.ts",
+        "../node_modules/fitbit-sdk-types/types/companion/settings.d.ts",
+        "../node_modules/fitbit-sdk-types/types/shared/messaging.d.ts"
+      ],
+      "../src/index.ts": [
+        "../src/compainion/settingstransmitter.ts"
+      ]
+    },
+    "exportedModulesMap": {
+      "../node_modules/fitbit-sdk-types/types/companion/index.d.ts": [
+        "../node_modules/fitbit-sdk-types/types/shared/cbor.d.ts",
+        "../node_modules/fitbit-sdk-types/types/shared/console.d.ts",
+        "../node_modules/fitbit-sdk-types/types/shared/device.d.ts",
+        "../node_modules/fitbit-sdk-types/types/shared/event.d.ts",
+        "../node_modules/fitbit-sdk-types/types/shared/geolocation.d.ts",
+        "../node_modules/fitbit-sdk-types/types/shared/globals.d.ts",
+        "../node_modules/fitbit-sdk-types/types/shared/i18n.d.ts",
+        "../node_modules/fitbit-sdk-types/types/shared/messaging.d.ts",
+        "../node_modules/fitbit-sdk-types/types/shared/permissions.d.ts"
+      ],
+      "../src/index.ts": [
+        "../src/compainion/settingstransmitter.ts"
+      ]
+    },
+    "semanticDiagnosticsPerFile": [
+      "../../../common/temp/node_modules/.pnpm/registry.npmjs.org/typescript/3.9.5/node_modules/typescript/lib/lib.es2015.collection.d.ts",
+      "../../../common/temp/node_modules/.pnpm/registry.npmjs.org/typescript/3.9.5/node_modules/typescript/lib/lib.es2015.core.d.ts",
+      "../../../common/temp/node_modules/.pnpm/registry.npmjs.org/typescript/3.9.5/node_modules/typescript/lib/lib.es2015.d.ts",
+      "../../../common/temp/node_modules/.pnpm/registry.npmjs.org/typescript/3.9.5/node_modules/typescript/lib/lib.es2015.generator.d.ts",
+      "../../../common/temp/node_modules/.pnpm/registry.npmjs.org/typescript/3.9.5/node_modules/typescript/lib/lib.es2015.iterable.d.ts",
+      "../../../common/temp/node_modules/.pnpm/registry.npmjs.org/typescript/3.9.5/node_modules/typescript/lib/lib.es2015.promise.d.ts",
+      "../../../common/temp/node_modules/.pnpm/registry.npmjs.org/typescript/3.9.5/node_modules/typescript/lib/lib.es2015.proxy.d.ts",
+      "../../../common/temp/node_modules/.pnpm/registry.npmjs.org/typescript/3.9.5/node_modules/typescript/lib/lib.es2015.reflect.d.ts",
+      "../../../common/temp/node_modules/.pnpm/registry.npmjs.org/typescript/3.9.5/node_modules/typescript/lib/lib.es2015.symbol.d.ts",
+      "../../../common/temp/node_modules/.pnpm/registry.npmjs.org/typescript/3.9.5/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+      "../../../common/temp/node_modules/.pnpm/registry.npmjs.org/typescript/3.9.5/node_modules/typescript/lib/lib.es5.d.ts",
+      "../../common-constants/lib/index.d.ts",
+      "../node_modules/fitbit-sdk-types/types/companion/app-cluster-storage.d.ts",
+      "../node_modules/fitbit-sdk-types/types/companion/blob.d.ts",
+      "../node_modules/fitbit-sdk-types/types/companion/calendars.d.ts",
+      "../node_modules/fitbit-sdk-types/types/companion/companion.d.ts",
+      "../node_modules/fitbit-sdk-types/types/companion/crypto.d.ts",
+      "../node_modules/fitbit-sdk-types/types/companion/fetch.d.ts",
+      "../node_modules/fitbit-sdk-types/types/companion/file-transfer.d.ts",
+      "../node_modules/fitbit-sdk-types/types/companion/host.d.ts",
+      "../node_modules/fitbit-sdk-types/types/companion/image.d.ts",
+      "../node_modules/fitbit-sdk-types/types/companion/index.d.ts",
+      "../node_modules/fitbit-sdk-types/types/companion/live-storage.d.ts",
+      "../node_modules/fitbit-sdk-types/types/companion/local-storage.d.ts",
+      "../node_modules/fitbit-sdk-types/types/companion/peer.d.ts",
+      "../node_modules/fitbit-sdk-types/types/companion/settings.d.ts",
+      "../node_modules/fitbit-sdk-types/types/companion/storage.d.ts",
+      "../node_modules/fitbit-sdk-types/types/companion/user-settings.d.ts",
+      "../node_modules/fitbit-sdk-types/types/companion/web-socket.d.ts",
+      "../node_modules/fitbit-sdk-types/types/shared/cbor.d.ts",
+      "../node_modules/fitbit-sdk-types/types/shared/console.d.ts",
+      "../node_modules/fitbit-sdk-types/types/shared/device.d.ts",
+      "../node_modules/fitbit-sdk-types/types/shared/event.d.ts",
+      "../node_modules/fitbit-sdk-types/types/shared/geolocation.d.ts",
+      "../node_modules/fitbit-sdk-types/types/shared/globals.d.ts",
+      "../node_modules/fitbit-sdk-types/types/shared/i18n.d.ts",
+      "../node_modules/fitbit-sdk-types/types/shared/messaging.d.ts",
+      "../node_modules/fitbit-sdk-types/types/shared/permissions.d.ts",
+      "../src/compainion/settingstransmitter.ts",
+      "../src/index.ts"
+    ]
+  },
+  "version": "3.9.5"
+}

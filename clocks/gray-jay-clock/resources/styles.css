@@ -1,0 +1,70 @@
+#background {
+  width: 100%;
+  height: 100%;
+  fill: white;
+}
+
+#myClock {
+  font-size: 80;
+  font-family: Seville-Bold;
+  text-length: 128;
+  text-anchor: end;
+  x: 98%;
+  y: 63;
+  fill: white;
+}
+
+#myClockDate {
+  font-size: 32;
+  font-family: Seville-Bold;
+  text-length: 32;
+  text-anchor: end;
+  x: 98%;
+  y: 100;
+  fill: white;
+}
+
+#myHeartRate {
+  font-size: 32;
+  font-family: Seville-Bold;
+  text-length: 32;
+  text-anchor: start;
+  x: 11%;
+  y: 75%;
+  fill: white;
+}
+
+#mySteps {
+  font-size: 32;
+  font-family: Seville-Bold;
+  text-length: 32;
+  text-anchor: start;
+  x: 11%;
+  y: 85%;
+  fill: white;
+}
+
+#myCalories {
+  font-size: 32;
+  font-family: Seville-Bold;
+  text-length: 32;
+  text-anchor: start;
+  x: 11%;
+  y: 95%;
+  fill: white;
+}
+
+#myHeartRateImg{
+  x: 0%;
+  y: 66%;
+}
+
+#myStepsImg{
+  x: 0%;
+  y: 76%;
+}
+
+#myCaloriesImg {
+  x: 0%;
+  y: 86%;
+}

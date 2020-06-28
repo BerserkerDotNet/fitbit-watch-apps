@@ -1,0 +1,14 @@
+<svg>
+  <image href="bird.jpg" />
+  <text id="myClock" />
+  <text id="myClockDate" />
+  <image id="myStepsImg" href="steps.png" width="32" height="32" />
+  <text id="mySteps" />
+  <image id="myCaloriesImg" href="calories.png" width="32" height="32" />
+  <text id="myCalories" />
+  <image id="myHeartRateImg" href="heart.png" width="32" height="32" />
+  <text id="myHeartRate" />
+
+  <!-- USE KPAY UI CODE - ADD ALL OWN UI CODE ABOVE THIS LINE -->
+  <use href="#kpay" />
+</svg>

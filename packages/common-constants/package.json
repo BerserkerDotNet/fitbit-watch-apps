@@ -1,0 +1,20 @@
+{
+  "name": "@berserkerdotnet/common-constants",
+  "version": "1.0.0",
+  "author": "Andrii Snihyr",
+  "license": "GPL-3.0",
+  "main": "./lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  },
+  "files": [
+    "./lib/index.js",
+    "./lib/index.d.ts"
+  ],
+  "scripts": {
+    "build": "tsc"
+  }
+}

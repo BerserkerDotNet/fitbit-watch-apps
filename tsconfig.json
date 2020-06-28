@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es6",
+    "lib": ["es6"],
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "declaration": true,
+    "declarationMap": true,
+    "downlevelIteration": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "incremental": true,
+    "strictBindCallApply": true
+  }
+}
