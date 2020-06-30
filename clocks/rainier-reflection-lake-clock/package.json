@@ -14,7 +14,8 @@
       "access_internet",
       "access_heart_rate",
       "access_activity",
-      "access_app_cluster_storage"
+      "access_app_cluster_storage",
+      "access_user_profile"
     ],
     "buildTargets": [
       "higgs",

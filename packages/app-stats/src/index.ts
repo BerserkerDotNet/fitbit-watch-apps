@@ -1,6 +1,8 @@
 import { HeartRateSensor } from "heart-rate";
 import { today, primaryGoal } from "user-activity";
+import { user } from "user-profile";
 import { display } from "display";
+import { me as appbit } from "appbit";
 
 export interface StatsUIElements {
   caloriesText?: TextElement | null;
@@ -12,6 +14,17 @@ export interface StatsUIElements {
   statsVisibilityToggles?: GraphicsElement[] | null;
   statsToToggle?: GraphicsElement[] | null;
   showCaloriesAsActivity: boolean;
+  heartRateZoneSettings: HeartRateZoneSettings;
+}
+
+export interface HeartRateZoneSettings {
+  "out-of-range": string;
+  "fat-burn": string;
+  cardio: string;
+  peak: string;
+  "below-custom": string;
+  custom: string;
+  "above-custom": string;
 }
 
 export function initializeStats(uiElements: StatsUIElements) : () => void {
@@ -26,6 +39,10 @@ function initializeHeartRate(uiElements: StatsUIElements): void {
     const hrm = new HeartRateSensor({ frequency: 1 });
     hrm.onreading = () => {
       if (uiElements.heartRateText) {
+        if(appbit.permissions.granted("access_user_profile")){
+          const zone = user.heartRateZone(hrm.heartRate ?? 0);
+          uiElements.heartRateText.style.fill = uiElements.heartRateZoneSettings[zone];
+        }
         uiElements.heartRateText.text = valueOrEmptyPlaceholder(hrm.heartRate);
       }
     };

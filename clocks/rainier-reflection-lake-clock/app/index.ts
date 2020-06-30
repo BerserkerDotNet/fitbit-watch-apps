@@ -40,7 +40,16 @@ const refreshStats = initializeStats({
   heartRateText: <TextElement>document.getElementById("myHeartRate"),
   statsVisibilityToggles: [bgImage, myClock],
   statsToToggle: <GraphicsElement[]>document.getElementsByClassName("stats"),
-  showCaloriesAsActivity: false
+  showCaloriesAsActivity: false,
+  heartRateZoneSettings: {
+    "out-of-range": "white",
+    "fat-burn": "yellow",
+    cardio: "tomato",
+    peak: "darkred",
+    "below-custom": "white",
+    custom: "yellow",
+    "above-custom": "darkred"
+  }
 });
 
 // CLOCKS
