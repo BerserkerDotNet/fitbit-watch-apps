@@ -1,10 +1,11 @@
 import { HeartRateSensor } from "heart-rate";
+import { BodyPresenceSensor } from "body-presence";
 import { today, primaryGoal } from "user-activity";
 import { user } from "user-profile";
 import { display } from "display";
 import { me as appbit } from "appbit";
 
-export interface StatsUIElements {
+export interface StatsSettings {
   caloriesText?: TextElement | null;
   caloriesImage?: ImageElement | null;
   activityText?: TextElement | null;
@@ -27,14 +28,14 @@ export interface HeartRateZoneSettings {
   "above-custom": string;
 }
 
-export function initializeStats(uiElements: StatsUIElements) : () => void {
+export function initializeStats(uiElements: StatsSettings) : () => void {
     initializeHeartRate(uiElements);
     const refreshActivity = initializeActivities(uiElements);
 
     return refreshActivity;
 }
 
-function initializeHeartRate(uiElements: StatsUIElements): void {
+function initializeHeartRate(uiElements: StatsSettings): void {
   if (HeartRateSensor && uiElements.heartRateText) {
     const hrm = new HeartRateSensor({ frequency: 1 });
     hrm.onreading = () => {
@@ -47,6 +48,20 @@ function initializeHeartRate(uiElements: StatsUIElements): void {
       }
     };
 
+    if (BodyPresenceSensor) {
+      const body = new BodyPresenceSensor();
+      body.onreading =  () => {
+        if (!body.present) {
+          hrm.stop();
+          setEmptyHeartRateText(uiElements);
+        } else {
+          hrm.start();
+        }
+      };
+      
+      body.start();
+    }
+
     display.onchange = () => {
       display.on ? hrm.start() : hrm.stop();
     }
@@ -55,7 +70,14 @@ function initializeHeartRate(uiElements: StatsUIElements): void {
   }
 }
 
-function initializeActivities(uiElements: StatsUIElements) : () => void {
+function setEmptyHeartRateText(uiElements: StatsSettings): void{
+  if (uiElements.heartRateText) {
+    uiElements.heartRateText.style.fill = uiElements.heartRateZoneSettings["out-of-range"];
+    uiElements.heartRateText.text = "--";
+  }
+}
+
+function initializeActivities(uiElements: StatsSettings) : () => void {
   let statsVisible = true;
   type mainGoal = "steps" | "distance" | "activeMinutes" | "elevationGain" | "calories";
   const defaultActivities = <mainGoal[]>["steps", "distance", "activeMinutes", "elevationGain"];
