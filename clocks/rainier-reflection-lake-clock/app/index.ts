@@ -3,6 +3,9 @@ import { SettingKeys } from "@berserkerdotnet/common-constants";
 import { initializeSettings } from "@berserkerdotnet/app-settings";
 import { initializeStats } from "@berserkerdotnet/app-stats";
 import { initializeClock } from "@berserkerdotnet/app-clock";
+import { initializeKPay } from "@berserkerdotnet/k-pay/app";
+
+initializeKPay(true, true, 125569849);
 
 const bgImage = <GraphicsElement>document.getElementById("bgImage");
 const myClock = <TextElement>document.getElementById("myClock");

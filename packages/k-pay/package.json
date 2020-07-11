@@ -1,0 +1,13 @@
+{
+    "name": "@berserkerdotnet/k-pay",
+    "version": "1.0.0",
+    "author": "Andrii Snihyr",
+    "license": "GPL-3.0",
+    "devDependencies": {
+      "fitbit-sdk-types": "^4.3.8",
+      "@fitbit/sdk": "~4.1.0"
+    },
+    "scripts": {
+      "build": "tsc"
+    }
+  }

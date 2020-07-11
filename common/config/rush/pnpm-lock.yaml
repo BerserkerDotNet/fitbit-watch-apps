@@ -5,6 +5,7 @@ dependencies:
   '@rush-temp/app-settings': 'file:projects/app-settings.tgz'
   '@rush-temp/app-stats': 'file:projects/app-stats.tgz'
   '@rush-temp/common-constants': 'file:projects/common-constants.tgz'
+  '@rush-temp/k-pay': 'file:projects/k-pay.tgz'
   '@rush-temp/rainier-reflection-lake-clock': 'file:projects/rainier-reflection-lake-clock.tgz'
   '@rush-temp/settings-transmitter': 'file:projects/settings-transmitter.tgz'
   fitbit-sdk-types: 4.3.8
@@ -3490,6 +3491,15 @@ packages:
       integrity: sha512-UsoCWTBUTKYyL+HHflbnfpeTo5FYqrTJtlrObd9mEZADHrjMVqKrPX52X5tXlN1ODlA10xvnfUXYreBFo1XJdg==
       tarball: 'file:projects/common-constants.tgz'
     version: 0.0.0
+  'file:projects/k-pay.tgz':
+    dependencies:
+      fitbit-sdk-types: 4.3.8
+    dev: false
+    name: '@rush-temp/k-pay'
+    resolution:
+      integrity: sha512-0yQI5zbVRt/E95TDmg/mtyHRbkY8v7MUWw+SukbLdYjIPihjbpf884uKHRID0Hjk5R6V0F4HpJ189x2pCRAnMQ==
+      tarball: 'file:projects/k-pay.tgz'
+    version: 0.0.0
   'file:projects/rainier-reflection-lake-clock.tgz':
     dependencies:
       '@fitbit/sdk': 4.1.0
@@ -3498,7 +3508,7 @@ packages:
     dev: false
     name: '@rush-temp/rainier-reflection-lake-clock'
     resolution:
-      integrity: sha512-xlDYiGppVpYtMhkstBZTeSG9qgtZlcG4QZEecj+I+H2lz90u8Ghjl5sDNkhEFqlMfF+l+gi6c80b52y1XXC+fQ==
+      integrity: sha512-z+99hXgCWw3Ig1X9TZou6sL8ZzO/ZrdGj2RN3cGYZfnpgPGTaWOfODg1Lmn89NdiD8TGY/I/QBHoi7SK7bN0tQ==
       tarball: 'file:projects/rainier-reflection-lake-clock.tgz'
     version: 0.0.0
   'file:projects/settings-transmitter.tgz':
@@ -3519,6 +3529,7 @@ specifiers:
   '@rush-temp/app-settings': 'file:./projects/app-settings.tgz'
   '@rush-temp/app-stats': 'file:./projects/app-stats.tgz'
   '@rush-temp/common-constants': 'file:./projects/common-constants.tgz'
+  '@rush-temp/k-pay': 'file:./projects/k-pay.tgz'
   '@rush-temp/rainier-reflection-lake-clock': 'file:./projects/rainier-reflection-lake-clock.tgz'
   '@rush-temp/settings-transmitter': 'file:./projects/settings-transmitter.tgz'
   fitbit-sdk-types: ^4.3.8

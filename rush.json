@@ -32,6 +32,11 @@
       "shouldPublish": false
     },
     {
+      "packageName": "@berserkerdotnet/k-pay",
+      "projectFolder": "packages/k-pay",
+      "shouldPublish": false
+    },
+    {
       "packageName": "rainier-reflection-lake-clock",
       "projectFolder": "clocks/rainier-reflection-lake-clock",
       "shouldPublish": false

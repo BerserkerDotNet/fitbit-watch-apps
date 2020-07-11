@@ -31,7 +31,8 @@
     "@berserkerdotnet/settings-transmitter": "^1.0.0",
     "@berserkerdotnet/app-settings": "^1.0.0",
     "@berserkerdotnet/app-stats": "^1.0.0",
-    "@berserkerdotnet/app-clock": "^1.0.0"
+    "@berserkerdotnet/app-clock": "^1.0.0",
+    "@berserkerdotnet/k-pay": "^1.0.0"
   },
   "devDependencies": {
     "@fitbit/sdk": "~4.1.0",

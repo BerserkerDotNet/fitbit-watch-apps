@@ -1,0 +1,20 @@
+{
+	"extends": "../../tsconfig.json",
+	"compilerOptions": {
+		"target": "es2015",
+		"lib": ["es2015"],
+		"noEmit": true,
+		"noImplicitAny": false,
+		"checkJs": false,
+		"allowJs": true,
+		"incremental": false,
+		"jsx": "preserve"
+	},
+	"include": [
+		"**/*.ts",
+		"**/*.js",
+		"**/*.tsx",
+		"**/*.jsx",
+		"./node_modules/fitbit-sdk-types/types/settings"
+	]
+}

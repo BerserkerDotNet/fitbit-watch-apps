@@ -4,7 +4,7 @@
 		"target": "es2015",
 		"lib": ["es2015"],
 		"noEmit": true,
-		"checkJs": true
+		"checkJs": false
 	},
 	"include": [
 		"**/*.ts",
@@ -12,6 +12,7 @@
 		"**/*.tsx",
 		"**/*.jsx",
 		"../../../packages/**/lib/**/*.js",
+		"../../../packages/k-pay/**/settings/**/*.jsx",
 		"../node_modules/fitbit-sdk-types/types/settings"
 	]
 }

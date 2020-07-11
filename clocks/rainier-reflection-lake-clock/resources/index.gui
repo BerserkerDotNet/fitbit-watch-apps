@@ -9,4 +9,7 @@
   <image id="myHeartRateImg" href="heart.png" width="32" height="32" class="stats">
   </image>
   <text id="myHeartRate" class="stats" />
+
+  <!-- USE KPAY UI CODE - DO NOT MODIFY BELOW THIS LINE - ADD ALL OWN UI CODE ABOVE THIS LINE -->
+  <use href="#kpay" />
 </svg>
