@@ -1,3 +1,4 @@
 export const SettingKeys = {
-    thinFont: "thinFont"
+    smallClockFont: "smallClockFont",
+    hideStatsOnTap: "hideStatsOnTap"
 };

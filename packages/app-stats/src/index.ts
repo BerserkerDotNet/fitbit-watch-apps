@@ -14,6 +14,7 @@ export interface StatsSettings {
   heartRateImage?: ImageElement | null;
   statsVisibilityToggles?: GraphicsElement[] | null;
   statsToToggle?: GraphicsElement[] | null;
+  shouldToggleStats: boolean;
   showCaloriesAsActivity: boolean;
   heartRateZoneSettings: HeartRateZoneSettings;
 }
@@ -142,6 +143,10 @@ function initializeActivities(uiElements: StatsSettings) : () => void {
       }
 
       statsVisible = !statsVisible;
+      if(!uiElements.shouldToggleStats){
+        statsVisible = true;
+      }
+
       const visibility = statsVisible ? "visible" : "hidden"
       uiElements.statsToToggle.forEach(function(element) {
         element.style.visibility = visibility;

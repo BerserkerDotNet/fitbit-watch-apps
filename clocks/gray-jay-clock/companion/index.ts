@@ -7,4 +7,4 @@ setDefaultSettings({
     [SettingKeys.hideStatsOnTap]: true
 });
 initializeSettingsTransmitter(SettingKeys.smallClockFont, SettingKeys.hideStatsOnTap);
-initializeKPay("Mt. Rainier Reflection Lake");
+initializeKPay("Gray Jay Clock");

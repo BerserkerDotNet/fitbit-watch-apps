@@ -40,6 +40,11 @@
       "packageName": "rainier-reflection-lake-clock",
       "projectFolder": "clocks/rainier-reflection-lake-clock",
       "shouldPublish": false
+    },
+    {
+      "packageName": "gray-jay-clock",
+      "projectFolder": "clocks/gray-jay-clock",
+      "shouldPublish": false
     }
   ]
 }

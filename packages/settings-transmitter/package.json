@@ -12,7 +12,6 @@
     "fitbit-sdk-types": "^4.3.8"
   },
   "dependencies": {
-    "@berserkerdotnet/common-constants": "^1.0.0"
   },
   "scripts": {
     "build": "tsc"

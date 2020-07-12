@@ -5,6 +5,7 @@ dependencies:
   '@rush-temp/app-settings': 'file:projects/app-settings.tgz'
   '@rush-temp/app-stats': 'file:projects/app-stats.tgz'
   '@rush-temp/common-constants': 'file:projects/common-constants.tgz'
+  '@rush-temp/gray-jay-clock': 'file:projects/gray-jay-clock.tgz'
   '@rush-temp/k-pay': 'file:projects/k-pay.tgz'
   '@rush-temp/rainier-reflection-lake-clock': 'file:projects/rainier-reflection-lake-clock.tgz'
   '@rush-temp/settings-transmitter': 'file:projects/settings-transmitter.tgz'
@@ -3491,13 +3492,25 @@ packages:
       integrity: sha512-UsoCWTBUTKYyL+HHflbnfpeTo5FYqrTJtlrObd9mEZADHrjMVqKrPX52X5tXlN1ODlA10xvnfUXYreBFo1XJdg==
       tarball: 'file:projects/common-constants.tgz'
     version: 0.0.0
+  'file:projects/gray-jay-clock.tgz':
+    dependencies:
+      '@fitbit/sdk': 4.1.0
+      '@fitbit/sdk-cli': 1.7.2
+      fitbit-sdk-types: 4.3.8
+    dev: false
+    name: '@rush-temp/gray-jay-clock'
+    resolution:
+      integrity: sha512-zXrzbaWBc10EuF7vZYIetXqFka/LXsnWkgbyRv0Dc6CnplGns5k2nxSmvj/v1mqMmQaO6hXmNMHZ63/nq7D5/Q==
+      tarball: 'file:projects/gray-jay-clock.tgz'
+    version: 0.0.0
   'file:projects/k-pay.tgz':
     dependencies:
+      '@fitbit/sdk': 4.1.0
       fitbit-sdk-types: 4.3.8
     dev: false
     name: '@rush-temp/k-pay'
     resolution:
-      integrity: sha512-0yQI5zbVRt/E95TDmg/mtyHRbkY8v7MUWw+SukbLdYjIPihjbpf884uKHRID0Hjk5R6V0F4HpJ189x2pCRAnMQ==
+      integrity: sha512-e+P/0ourHDnun5+NAYWVISwd5IlFPUnIIHLYI+hwcWs5pPec/zRorWfisKknJgp2CljGpqZC+hQHoEo1MQEUTw==
       tarball: 'file:projects/k-pay.tgz'
     version: 0.0.0
   'file:projects/rainier-reflection-lake-clock.tgz':
@@ -3518,7 +3531,7 @@ packages:
     dev: false
     name: '@rush-temp/settings-transmitter'
     resolution:
-      integrity: sha512-Ah+Wv4wcxdROqbphkvsFpMFYhdxuND3Q9tKpu1ii42oHlhM9Y6U8Z2BYxGALgYbmnLDHaNws/h1k9jcvjKbSuA==
+      integrity: sha512-1ZZKLixsBRr7JtTK4MBjlVmKVSGw7Jfu5rSGMnxcG+BP6XnAY4nPaK0CkmBYL0MjJge9N0lXtHX6PtdexsXo/A==
       tarball: 'file:projects/settings-transmitter.tgz'
     version: 0.0.0
 registry: ''
@@ -3529,6 +3542,7 @@ specifiers:
   '@rush-temp/app-settings': 'file:./projects/app-settings.tgz'
   '@rush-temp/app-stats': 'file:./projects/app-stats.tgz'
   '@rush-temp/common-constants': 'file:./projects/common-constants.tgz'
+  '@rush-temp/gray-jay-clock': 'file:./projects/gray-jay-clock.tgz'
   '@rush-temp/k-pay': 'file:./projects/k-pay.tgz'
   '@rush-temp/rainier-reflection-lake-clock': 'file:./projects/rainier-reflection-lake-clock.tgz'
   '@rush-temp/settings-transmitter': 'file:./projects/settings-transmitter.tgz'

@@ -7,7 +7,7 @@ import { initializeKPay } from "@berserkerdotnet/k-pay/app";
 
 var testMode = true;
 var showPaidAppPopup = true;
-var appId = 686796045;
+var appId = 125569849;
 
 initializeKPay(testMode, showPaidAppPopup, appId);
 
@@ -57,9 +57,13 @@ function settingsCallback(data: any) {
 
 function setFont(isSmall: boolean){
     if(isSmall) {
-      myClock.style.fontFamily = "Colfax-Thin";
+      myClock.text = myClock.text;
+      myClock.style.fontFamily = "Seville-Regular";
+      myClockDate.style.fontFamily = "Seville-Regular";
     } else {
-      myClock.style.fontFamily = "Colfax-Light";
+      myClock.text = myClock.text;
+      myClock.style.fontFamily = "Seville-Bold";
+      myClockDate.style.fontFamily = "Seville-Bold";
     }
 }
 
