@@ -15,6 +15,7 @@ export interface StatsSettings {
   statsVisibilityToggles?: GraphicsElement[] | null;
   statsToToggle?: GraphicsElement[] | null;
   shouldToggleStats: boolean;
+  shouldCycleStats: boolean;
   showCaloriesAsActivity: boolean;
   heartRateZoneSettings: HeartRateZoneSettings;
 }
@@ -116,6 +117,10 @@ function initializeActivities(uiElements: StatsSettings) : () => void {
   }
   
   const showNextActivity = () => {
+    if(!uiElements.shouldCycleStats){
+      return;
+    }
+
     currentActivity++;
     if(currentActivity >= activities.length){
       currentActivity = 0;

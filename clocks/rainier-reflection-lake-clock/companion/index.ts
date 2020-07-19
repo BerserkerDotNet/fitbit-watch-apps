@@ -4,7 +4,8 @@ import { SettingKeys } from "@berserkerdotnet/common-constants";
 
 setDefaultSettings({
     [SettingKeys.smallClockFont]: true,
-    [SettingKeys.hideStatsOnTap]: true
+    [SettingKeys.hideStatsOnTap]: true,
+    [SettingKeys.tapToCycleStats]: false,
 });
-initializeSettingsTransmitter(SettingKeys.smallClockFont, SettingKeys.hideStatsOnTap);
+initializeSettingsTransmitter(SettingKeys.smallClockFont, SettingKeys.hideStatsOnTap, SettingKeys.tapToCycleStats);
 initializeKPay("Mt. Rainier Reflection Lake");

@@ -23,6 +23,7 @@ const statsConfig = {
   statsVisibilityToggles: [bgImage, myClock],
   statsToToggle: <GraphicsElement[]>document.getElementsByClassName("stats"),
   shouldToggleStats: true,
+  shouldCycleStats: false,
   showCaloriesAsActivity: false,
   heartRateZoneSettings: {
     "out-of-range": "white",
@@ -40,18 +41,21 @@ const statsConfig = {
 initializeSettings(settingsCallback);
 
 function settingsCallback(data: any) {
-    if(!data){
-        console.warn("Settings is null!");
-        return;
-    }
+  if (!data) {
+    console.warn("Settings is null!");
+    return;
+  }
 
-    if(data[SettingKeys.smallClockFont] !== undefined){
-        setFont(data[SettingKeys.smallClockFont]);
-    }
+  if (data[SettingKeys.smallClockFont] !== undefined) {
+    setFont(data[SettingKeys.smallClockFont]);
+  }
 
-    if(data[SettingKeys.hideStatsOnTap] !== undefined){
-      statsConfig.shouldToggleStats = data[SettingKeys.hideStatsOnTap];
-      console.log("TOGGLE STATS: " + statsConfig.shouldToggleStats);
+  if (data[SettingKeys.hideStatsOnTap] !== undefined) {
+    statsConfig.shouldToggleStats = data[SettingKeys.hideStatsOnTap];
+  }
+
+  if (data[SettingKeys.tapToCycleStats] !== undefined) {
+    statsConfig.shouldCycleStats = data[SettingKeys.tapToCycleStats];
   }
 }
 

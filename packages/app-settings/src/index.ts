@@ -23,13 +23,11 @@ export function initializeSettings(callback: (setting: {}) => void, fileName: st
     }
     
     messaging.peerSocket.onmessage = function(evt) {
-        console.log("Message:" + evt.data.key +" - " + evt.data.value);
         settings[evt.data.key] = evt.data.value;
         callback(settings);
     }
 
     me.onunload = function(){
-        console.log("Saving settings to file: " + fileName);
         saveSettings();
     }
 

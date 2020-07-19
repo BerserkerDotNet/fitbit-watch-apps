@@ -6,5 +6,5 @@ setDefaultSettings({
     [SettingKeys.smallClockFont]: true,
     [SettingKeys.hideStatsOnTap]: true
 });
-initializeSettingsTransmitter(SettingKeys.smallClockFont, SettingKeys.hideStatsOnTap);
+initializeSettingsTransmitter(SettingKeys.smallClockFont, SettingKeys.hideStatsOnTap, SettingKeys.tapToCycleStats);
 initializeKPay("Gray Jay Clock");
