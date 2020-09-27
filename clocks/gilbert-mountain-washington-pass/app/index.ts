@@ -1,13 +1,13 @@
 import document from "document";
 import { SettingKeys } from "@berserkerdotnet/common-constants";
 import { initializeSettings } from "@berserkerdotnet/app-settings";
-import { initializeStats } from "@berserkerdotnet/app-stats";
+import { initializeStats, StatsSettings } from "@berserkerdotnet/app-stats";
 import { initializeClock } from "@berserkerdotnet/app-clock";
 import { initializeKPay } from "@berserkerdotnet/k-pay/app";
 
 var testMode = false;
 var showPaidAppPopup = true;
-var appId = 686796045;
+var appId = 741035146;
 
 initializeKPay(testMode, showPaidAppPopup, appId);
 
@@ -15,11 +15,13 @@ const bgImage = <GraphicsElement>document.getElementById("bgImage");
 const myClock = <TextElement>document.getElementById("myClock");
 const myClockDate = <TextElement>document.getElementById("myClockDate");
 
-const statsConfig = {
+const statsConfig : StatsSettings = {
   activityImage: <ImageElement>document.getElementById("myStepsImg"),
   activityText: <TextElement>document.getElementById("mySteps"),
   caloriesText: <TextElement>document.getElementById("myCalories"),
+  caloriesImage: <ImageElement>document.getElementById("myCaloriesImg"),
   heartRateText: <TextElement>document.getElementById("myHeartRate"),
+  heartRateImage: <ImageElement>document.getElementById("myHeartRateImg"),
   statsVisibilityToggles: [bgImage, myClock],
   statsToToggle: <GraphicsElement[]>document.getElementsByClassName("stats"),
   shouldToggleStats: true,

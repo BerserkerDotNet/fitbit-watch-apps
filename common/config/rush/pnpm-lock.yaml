@@ -5,6 +5,7 @@ dependencies:
   '@rush-temp/app-settings': 'file:projects/app-settings.tgz'
   '@rush-temp/app-stats': 'file:projects/app-stats.tgz'
   '@rush-temp/common-constants': 'file:projects/common-constants.tgz'
+  '@rush-temp/gilbert-mountain-washington-pass': 'file:projects/gilbert-mountain-washington-pass.tgz'
   '@rush-temp/gray-jay-clock': 'file:projects/gray-jay-clock.tgz'
   '@rush-temp/k-pay': 'file:projects/k-pay.tgz'
   '@rush-temp/rainier-reflection-lake-clock': 'file:projects/rainier-reflection-lake-clock.tgz'
@@ -3492,6 +3493,17 @@ packages:
       integrity: sha512-UsoCWTBUTKYyL+HHflbnfpeTo5FYqrTJtlrObd9mEZADHrjMVqKrPX52X5tXlN1ODlA10xvnfUXYreBFo1XJdg==
       tarball: 'file:projects/common-constants.tgz'
     version: 0.0.0
+  'file:projects/gilbert-mountain-washington-pass.tgz':
+    dependencies:
+      '@fitbit/sdk': 4.1.0
+      '@fitbit/sdk-cli': 1.7.2
+      fitbit-sdk-types: 4.3.8
+    dev: false
+    name: '@rush-temp/gilbert-mountain-washington-pass'
+    resolution:
+      integrity: sha512-eZfG6CS6+sxjutFUaOZ6ll8cnGN4q4y34MNLua5Meb6x0qYFbDRQhptLE2IfyH/rDiQncoQs3M+rq+mdkXZCaw==
+      tarball: 'file:projects/gilbert-mountain-washington-pass.tgz'
+    version: 0.0.0
   'file:projects/gray-jay-clock.tgz':
     dependencies:
       '@fitbit/sdk': 4.1.0
@@ -3542,6 +3554,7 @@ specifiers:
   '@rush-temp/app-settings': 'file:./projects/app-settings.tgz'
   '@rush-temp/app-stats': 'file:./projects/app-stats.tgz'
   '@rush-temp/common-constants': 'file:./projects/common-constants.tgz'
+  '@rush-temp/gilbert-mountain-washington-pass': 'file:./projects/gilbert-mountain-washington-pass.tgz'
   '@rush-temp/gray-jay-clock': 'file:./projects/gray-jay-clock.tgz'
   '@rush-temp/k-pay': 'file:./projects/k-pay.tgz'
   '@rush-temp/rainier-reflection-lake-clock': 'file:./projects/rainier-reflection-lake-clock.tgz'

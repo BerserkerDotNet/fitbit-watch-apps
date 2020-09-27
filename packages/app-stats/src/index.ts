@@ -47,6 +47,7 @@ function initializeHeartRate(uiElements: StatsSettings): void {
           uiElements.heartRateText.style.fill = uiElements.heartRateZoneSettings[zone];
         }
         uiElements.heartRateText.text = valueOrEmptyPlaceholder(hrm.heartRate);
+        updateStatImagePosition(uiElements.heartRateText, uiElements.heartRateImage);
       }
     };
 
@@ -133,13 +134,16 @@ function initializeActivities(uiElements: StatsSettings) : () => void {
   const refreshActivityValue = () => {
     if(uiElements.activityImage && uiElements.activityText){
       uiElements.activityText.text = valueOrEmptyPlaceholder(today.adjusted[activityProperty]);
-      uiElements.activityImage.x = uiElements.activityText.getBBox().x - uiElements.activityImage.getBBox().width;
+      updateStatImagePosition(uiElements.activityText, uiElements.activityImage);
       uiElements.activityImage.href = `${activityProperty}.png`;
     }
 
     if(!uiElements.showCaloriesAsActivity && uiElements.caloriesText){
       uiElements.caloriesText.text = valueOrEmptyPlaceholder(today.adjusted.calories);
+      updateStatImagePosition(uiElements.caloriesText, uiElements.caloriesImage);
     }
+
+    updateStatImagePosition(uiElements.heartRateText, uiElements.heartRateImage);
   }
 
   const toggleStats = () => {
@@ -163,4 +167,11 @@ function initializeActivities(uiElements: StatsSettings) : () => void {
 
 function valueOrEmptyPlaceholder(value : number | undefined | null) : string {
   return value ? value.toString() : "--";
+}
+
+function updateStatImagePosition(textElement: TextElement | undefined | null, img : ImageElement | undefined | null) {
+  if(img && textElement){
+    img.x = textElement.getBBox().x - img.getBBox().width;
+    img.y = textElement.getBBox().y;
+  }
 }

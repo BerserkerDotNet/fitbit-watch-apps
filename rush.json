@@ -45,6 +45,11 @@
       "packageName": "gray-jay-clock",
       "projectFolder": "clocks/gray-jay-clock",
       "shouldPublish": false
+    },
+    {
+      "packageName": "gilbert-mountain-washington-pass",
+      "projectFolder": "clocks/gilbert-mountain-washington-pass",
+      "shouldPublish": false
     }
   ]
 }

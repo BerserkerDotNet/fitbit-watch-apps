@@ -5,7 +5,7 @@ import { initializeStats } from "@berserkerdotnet/app-stats";
 import { initializeClock } from "@berserkerdotnet/app-clock";
 import { initializeKPay } from "@berserkerdotnet/k-pay/app";
 
-var testMode = true;
+var testMode = false;
 var showPaidAppPopup = true;
 var appId = 125569849;
 
