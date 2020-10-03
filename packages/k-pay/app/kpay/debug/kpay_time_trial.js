@@ -1,5 +1,5 @@
 /*
-* K·Pay Integration Library - v1.3.3 - Copyright Kiezel 2019
+* K·Pay Integration Library - v3.0.0 - Copyright Kiezel 2020
 * Last Modified: 2017-10-26
 *
 * BECAUSE THE LIBRARY IS LICENSED FREE OF CHARGE, THERE IS NO 
@@ -34,23 +34,23 @@ import * as kp from './kpay.js';
 import * as kc from './kpay_core.js';
 import * as kcm from '../../../common/kpay/kpay_common.js';
 
-var mn = null;
+var gn = null;
 
-function Kn() {
-    kc.kp9(U, hn, kn);
+function pn() {
+    kc.kp9(N, Pn, _n);
 }
 
-function U(n) {
+function N(n) {
     console.log("KPay_time_trial - _mainLibInitialized()"), n && (console.log("KPay_time_trial - Fresh install detected; appending State with trial info..."), 
-    kc.kp0.te = !1, kc.kp0.ts = !1, kc.kp0.te2 = null), kc.kp0.sl || (kc.kp0.ts && null !== kc.kp0.te2 ? bn() : kc.kp2(!1));
+    kc.kp0.te = !1, kc.kp0.ts = !1, kc.kp0.te2 = null), kc.kp0.sl || (kc.kp0.ts && null !== kc.kp0.te2 ? Kn() : kc.kp2(!1));
 }
 
-function hn() {
+function Pn() {
     console.log("KPay_time_trial - Connection with companion opened..."), kc.kp0.ts && !kc.kp0.te || kc.kp0.sl ? console.log("KPay_time_trial - initialized; no action necesarry") : (console.log("KPay_time_trial - initialized; starting status checks"), 
     kc.kp1(!0));
 }
 
-function kn(n) {
+function _n(n) {
     if ("trial" == n.status) {
         var e = Math.round(new Date().getTime() / 1e3) + Number(n.trialDurationInSeconds);
         if (!kc.kp0.ts || !kc.kp0.te2 || kc.kp0.te2 > e) {
@@ -58,25 +58,25 @@ function kn(n) {
             var a = new Date();
             a.setTime(1e3 * kc.kp0.te2), kc.kp5(3, a, !1);
         }
-        return kc.kp3(), bn(), !0;
+        return kc.kp3(), Kn(), !0;
     }
     return !1;
 }
 
-function vn() {
-    console.log("KPay_time_trial - _endTrialCallback()"), mn = null, wn();
+function mn() {
+    console.log("KPay_time_trial - _endTrialCallback()"), gn = null, hn();
 }
 
-function bn() {
+function Kn() {
     console.log("KPay_time_trial - _scheduleTrialEndTimer()");
     var n = Math.round(new Date().getTime() / 1e3);
     kc.kp0.te || kc.kp0.ts && n >= kc.kp0.te2 ? (console.log("KPay_time_trial - trial already ended!"), 
-    wn()) : kc.kp0.ts && n < kc.kp0.te2 && (console.log("KPay_time_trial - Scheduling trial to end in " + (kc.kp0.te2 - n) + " seconds."), 
-    mn = setTimeout(wn, 1e3 * (kc.kp0.te2 - n)));
+    hn()) : kc.kp0.ts && n < kc.kp0.te2 && (console.log("KPay_time_trial - Scheduling trial to end in " + (kc.kp0.te2 - n) + " seconds."), 
+    gn = setTimeout(hn, 1e3 * (kc.kp0.te2 - n)));
 }
 
-function wn() {
+function hn() {
     console.log("KPay_time_trial - _endTrial()"), kc.kp0.sl || (kc.kp5(4, null, !1), kc.startPurchase());
 }
 
-Kn();
+pn();

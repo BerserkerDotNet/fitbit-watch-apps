@@ -1,5 +1,5 @@
 /*
-* K·Pay Integration Library - v1.3.4 - Copyright Kiezel 2020
+* K·Pay Integration Library - v3.0.0 - Copyright Kiezel 2020
 * Last Modified: 2017-10-26
 *
 * BECAUSE THE LIBRARY IS LICENSED FREE OF CHARGE, THERE IS NO 
@@ -34,4 +34,4 @@ import * as kp from './kpay.js';
 import * as kc from './kpay_core.js';
 import * as kcm from '../../../common/kpay/kpay_common.js';
 
-var vn=null;function Pn(){kc.kp9(B,bn,hn)}function B(n){n&&(kc.kp0.te=!1,kc.kp0.ts=!1,kc.kp0.te2=null),kc.kp0.sl||(kc.kp0.ts&&null!==kc.kp0.te2?An():kc.kp2(!1))}function bn(){kc.kp0.ts&&!kc.kp0.te||kc.kp0.sl||kc.kp1(!0)}function hn(n){if("trial"==n.status){var t=Math.round((new Date).getTime()/1e3)+Number(n.trialDurationInSeconds);if(!kc.kp0.ts||!kc.kp0.te2||kc.kp0.te2>t){kc.kp0.sl=!1,7===kc.kp6()&&kc.kp7(),kc.kp0.ts=!0,kc.kp0.te2=t,kc.kp11();var e=new Date;e.setTime(1e3*kc.kp0.te2),kc.kp5(3,e,!1)}return kc.kp3(),An(),!0}return!1}function _n(){vn=null,wn()}function An(){var n=Math.round((new Date).getTime()/1e3);kc.kp0.te||kc.kp0.ts&&n>=kc.kp0.te2?wn():kc.kp0.ts&&n<kc.kp0.te2&&(vn=setTimeout(wn,1e3*(kc.kp0.te2-n)))}function wn(){kc.kp0.sl||(kc.kp5(4,null,!1),kc.startPurchase())}Pn();
+var gn=null;function yn(){kc.kp9(J,kn,mn)}function J(n){n&&(kc.kp0.te=!1,kc.kp0.ts=!1,kc.kp0.te2=null),kc.kp0.sl||(kc.kp0.ts&&null!==kc.kp0.te2?Pn():kc.kp2(!1))}function kn(){kc.kp0.ts&&!kc.kp0.te||kc.kp0.sl||kc.kp1(!0)}function mn(n){if("trial"==n.status){var t=Math.round((new Date).getTime()/1e3)+Number(n.trialDurationInSeconds);if(!kc.kp0.ts||!kc.kp0.te2||kc.kp0.te2>t){kc.kp0.sl=!1,7===kc.kp6()&&kc.kp7(),kc.kp0.ts=!0,kc.kp0.te2=t,kc.kp11();var e=new Date;e.setTime(1e3*kc.kp0.te2),kc.kp5(3,e,!1)}return kc.kp3(),Pn(),!0}return!1}function vn(){gn=null,bn()}function Pn(){var n=Math.round((new Date).getTime()/1e3);kc.kp0.te||kc.kp0.ts&&n>=kc.kp0.te2?bn():kc.kp0.ts&&n<kc.kp0.te2&&(gn=setTimeout(bn,1e3*(kc.kp0.te2-n)))}function bn(){kc.kp0.sl||(kc.kp5(4,null,!1),kc.startPurchase())}yn();

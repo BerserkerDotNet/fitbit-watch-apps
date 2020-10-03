@@ -1,5 +1,5 @@
 /*
-* K·Pay Integration Library - v1.3.3 - Copyright Kiezel 2019
+* K·Pay Integration Library - v3.0.0 - Copyright Kiezel 2020
 * Last Modified: 2019-11-04
 *
 * BECAUSE THE LIBRARY IS LICENSED FREE OF CHARGE, THERE IS NO 
@@ -39,14 +39,14 @@ import * as kc from './kpay_core.js';
 import * as kcfg from '../kpay_config.js';
 import * as kcm from '../../../common/kpay/kpay_common.js';
 
-var F = null, x = null, R = null, T = null, z = null, I = null, O = null, L = null;
+var F = null, x = null, M = null, R = null, T = null, O = null, z = null, I = null;
 
-function N() {
+function L() {
     console.log("KPay_dialogs - kpay_dialogs initialize called!"), me.permissions.granted("access_internet") || (console.log("KPay - ERROR: internet permission not enabled!"), 
-    B(gettext("InternetRequired"))), kc.kp8(U, H, j);
+    H(gettext("InternetRequired"))), kc.kp8(N, U, j);
 }
 
-function U(n) {
+function N(n) {
     console.log("KPay_dialogs - _mainLibInitialized()"), n && kcfg.config.showPaidAppPopup && (console.log("KPay_dialogs - Fresh install detected; showing paid app popup..."), 
     G());
 }
@@ -71,7 +71,7 @@ function G() {
     }, q(n, !0);
 }
 
-function H(n, e) {
+function U(n, e) {
     switch (console.log("KPay_dialogs - _handleEvent(e == " + n + ", extraData == " + e + ")"), 
     n) {
       case 5:
@@ -87,47 +87,42 @@ function H(n, e) {
     }
 }
 
-function B(n) {
+function H(n) {
     console.log("KPay_dialogs - _showError() - message == " + n), F || (F = J("kpay_errorDialog"), 
-    x = J("kpay_errorMessage")), x.text = n, Q(), q(F, !0), X();
+    x = J("kpay_errorMessage")), x.text = n, B(), q(F, !0), V();
 }
 
 function W(n, e) {
     console.log("KPay_dialogs - _showTrialEnded() - message == " + n + "; code == " + e), 
-    R || (R = J("kpay_trialEndedDialog"), T = J("kpay_trialEndedMessage"), z = J("kpay_trialEndedCode")), 
-    z.text = Z(e), T.text = n, Q(), q(R, !0), X();
+    M || (M = J("kpay_trialEndedDialog"), R = J("kpay_trialEndedMessage"), T = J("kpay_trialEndedCode")), 
+    T.text = e, R.text = n, B(), q(M, !0), V();
 }
 
 function Y() {
-    console.log("KPay_dialogs - _showPurchaseSuccess()"), L || (L = J("kpay_purchaseSuccessDialog")), 
-    Q(), q(L, !0), R && q(R, !1), X("celebration-long"), setTimeout(j, 5e3);
+    console.log("KPay_dialogs - _showPurchaseSuccess()"), I || (I = J("kpay_purchaseSuccessDialog")), 
+    B(), q(I, !0), M && q(M, !1), V("celebration-long"), setTimeout(j, 5e3);
 }
 
 function j() {
-    console.log("KPay_dialogs - _hideAlert()"), V(), F && q(F, !1), R && q(R, !1), L && q(L, !1);
+    console.log("KPay_dialogs - _hideAlert()"), Q(), F && q(F, !1), M && q(M, !1), I && q(I, !1);
+}
+
+function B() {
+    O || (O = J("kpay_timeInDialog"), z = function() {
+        var n = new Date(), e = ("0" + n.getHours()).slice(-2) + ":" + ("0" + n.getMinutes()).slice(-2);
+        O.text = e;
+    }, clock.addEventListener("tick", function() {
+        O && "inline" == O.style.display && z();
+    })), O && (z(), q(O, !0));
 }
 
 function Q() {
-    I || (I = J("kpay_timeInDialog"), O = function() {
-        var n = new Date(), e = ("0" + n.getHours()).slice(-2) + ":" + ("0" + n.getMinutes()).slice(-2);
-        I.text = e;
-    }, clock.addEventListener("tick", function() {
-        I && "inline" == I.style.display && O();
-    })), I && (O(), q(I, !0));
+    O && q(O, !1);
 }
 
-function V() {
-    I && q(I, !1);
-}
-
-function X(n) {
+function V(n) {
     display.poke(), vibration.start(n || "nudge-max");
 }
 
-function Z(n) {
-    for (var e = ""; n > 0; ) e = String.fromCharCode(16 + n % 10) + e, n = n / 10 | 0;
-    return e;
-}
-
-N();
+L();
 

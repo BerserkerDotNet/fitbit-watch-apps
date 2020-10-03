@@ -31,10 +31,10 @@ const statsConfig : StatsSettings = {
     "out-of-range": "white",
     "fat-burn": "yellow",
     cardio: "tomato",
-    peak: "darkred",
+    peak: "red",
     "below-custom": "white",
     custom: "yellow",
-    "above-custom": "darkred"
+    "above-custom": "red"
   }
 };
 
@@ -63,9 +63,9 @@ function settingsCallback(data: any) {
 
 function setFont(isSmall: boolean){
     if(isSmall) {
-      myClock.style.fontFamily = "Colfax-Thin";
+      myClock.style.fontFamily = "System-Light";
     } else {
-      myClock.style.fontFamily = "Colfax-Light";
+      myClock.style.fontFamily = "System-Regular";
     }
 }
 

@@ -1,5 +1,5 @@
 /*
-* K·Pay Integration Library - v1.3.4 - Copyright Kiezel 2020
+* K·Pay Integration Library - v3.0.0 - Copyright Kiezel 2020
 * Last Modified: 2018-04-11
 *
 * BECAUSE THE LIBRARY IS LICENSED FREE OF CHARGE, THERE IS NO
@@ -34,4 +34,4 @@ import { inbox } from "file-transfer";
 import * as kcm from '../../../common/kpay/kpay_common.js';
 import * as kc from './kpay_core.js';
 
-var an=[kcm.statusMessageFilename,kcm.purchaseMessageFilename],rn=[],ln=[],fn=inbox.nextFile;function sn(){kc.useFileTransfer(),inbox.addEventListener("newfile",dn)}function dn(n){var t=pn();void 0!==t&&kc.processMessageFromCompanion(fs.readFileSync(t,"cbor"))}inbox.nextFile=function(){if(rn.length>0)return rn.pop();for(var n;n=fn();){if(!(an.indexOf(n)>-1))return n;ln.push(n)}};function pn(){if(ln.length>0)return ln.pop();for(var n;n=fn();){if(an.indexOf(n)>-1)return n;rn.push(n)}}sn();
+var cn=[kcm.statusMessageFilename,kcm.purchaseMessageFilename],an=[],rn=[],ln=inbox.nextFile;function fn(){kc.useFileTransfer(),inbox.addEventListener("newfile",sn)}function sn(n){var t=dn();void 0!==t&&kc.processMessageFromCompanion(fs.readFileSync(t,"cbor"))}inbox.nextFile=function(){if(an.length>0)return an.pop();for(var n;n=ln();){if(!(cn.indexOf(n)>-1))return n;rn.push(n)}};function dn(){if(rn.length>0)return rn.pop();for(var n;n=ln();){if(cn.indexOf(n)>-1)return n;an.push(n)}}fn();

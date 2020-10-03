@@ -6,65 +6,50 @@
 
 #myClock {
   font-size: 80;
-  font-family: Seville-Bold;
+  font-family: System-Light;
   text-length: 128;
   text-anchor: end;
-  x: 98%;
-  y: 63;
+  x: 90%;
+  y: 80;
   fill: white;
 }
 
 #myClockDate {
   font-size: 32;
-  font-family: Seville-Bold;
+  font-family: System-Light;
   text-length: 32;
   text-anchor: end;
-  x: 98%;
-  y: 100;
+  x: 90%;
+  y: 110;
   fill: white;
 }
 
 #myHeartRate {
-  font-size: 32;
-  font-family: Seville-Bold;
+  font-size: 20;
+  font-family: System-Bold;
   text-length: 32;
   text-anchor: start;
-  x: 11%;
+  x: 10%;
   y: 75%;
   fill: white;
 }
 
 #mySteps {
-  font-size: 32;
-  font-family: Seville-Bold;
+  font-size: 20;
+  font-family: System-Bold;
   text-length: 32;
   text-anchor: start;
-  x: 11%;
+  x: 13%;
   y: 85%;
   fill: white;
 }
 
 #myCalories {
-  font-size: 32;
-  font-family: Seville-Bold;
+  font-size: 20;
+  font-family: System-Bold;
   text-length: 32;
   text-anchor: start;
-  x: 11%;
-  y: 95%;
+  x: 18%;
+  y: 94%;
   fill: white;
-}
-
-#myHeartRateImg{
-  x: 0%;
-  y: 66%;
-}
-
-#myStepsImg{
-  x: 0%;
-  y: 76%;
-}
-
-#myCaloriesImg {
-  x: 0%;
-  y: 86%;
 }

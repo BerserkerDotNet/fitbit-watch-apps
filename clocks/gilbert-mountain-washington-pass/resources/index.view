@@ -1,0 +1,16 @@
+<svg viewport-fill="#000000">
+  <image href="pass.jpg" id="bgImage" pointer-events="visible" />
+  <text id="myClock" pointer-events="visible" />
+  <text id="myClockDate" />
+  <text id="mySteps" class="stats" pointer-events="visible"  />
+  <image id="myStepsImg" href="steps.png" width="20" height="20" class="stats" pointer-events="visible"  />
+  <g transform="rotate(0)">
+    <image id="myCaloriesImg" href="calories.png" width="20" height="20" class="stats" />
+    <text id="myCalories" class="stats" />
+  </g>
+  <image id="myHeartRateImg" href="heart.png" width="20" height="20" class="stats">
+  </image>
+  <text id="myHeartRate" class="stats" />
+  <!-- USE KPAY UI CODE - DO NOT MODIFY BELOW THIS LINE - ADD ALL OWN UI CODE ABOVE THIS LINE -->
+  <g layer="10000"><use href="#kpay" /></g>
+</svg>

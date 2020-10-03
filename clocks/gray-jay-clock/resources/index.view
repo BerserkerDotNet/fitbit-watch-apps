@@ -1,0 +1,14 @@
+<svg>
+  <image href="bird.jpg" id="bgImage" pointer-events="visible" />
+  <text id="myClock" pointer-events="visible" />
+  <text id="myClockDate" />
+  <text id="mySteps" class="stats" pointer-events="visible"  />
+  <image id="myStepsImg" href="steps.png" width="20" height="20" class="stats" pointer-events="visible"  />
+  <image id="myCaloriesImg" href="calories.png" width="20" height="20" class="stats" />
+  <text id="myCalories" class="stats" />
+  <image id="myHeartRateImg" href="heart.png" width="20" height="20" class="stats">
+  </image>
+  <text id="myHeartRate" class="stats" />
+
+  <g layer="10000"><use href="#kpay" /></g>
+</svg>

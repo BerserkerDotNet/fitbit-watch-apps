@@ -1,5 +1,5 @@
 /*
-* K·Pay Integration Library - v1.3.3 - Copyright Kiezel 2019
+* K·Pay Integration Library - v3.0.0 - Copyright Kiezel 2020
 * Last Modified: 2018-04-11
 *
 * BECAUSE THE LIBRARY IS LICENSED FREE OF CHARGE, THERE IS NO
@@ -32,13 +32,13 @@
 import * as messaging from 'messaging';
 import * as kc from './kpay_core.js';
 
-function gn() {
-    console.log("KPay_messaging - kpay_messaging initialize called!"), messaging.peerSocket.addEventListener("message", fn);
+function yn() {
+    console.log("KPay_messaging - kpay_messaging initialize called!"), messaging.peerSocket.addEventListener("message", dn);
 }
 
-function fn(n) {
+function dn(n) {
     console.log("KPay_messaging - _onMessageFromCompanion()"), kc.processMessageFromCompanion(n.data);
 }
 
-gn();
+yn();
 

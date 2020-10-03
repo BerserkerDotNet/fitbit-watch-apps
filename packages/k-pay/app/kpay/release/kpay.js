@@ -1,5 +1,5 @@
 /*
-* K·Pay Integration Library - v1.3.4 - Copyright Kiezel 2020
+* K·Pay Integration Library - v3.0.0 - Copyright Kiezel 2020
 * Last Modified: 2018-04-11
 *
 * BECAUSE THE LIBRARY IS LICENSED FREE OF CHARGE, THERE IS NO 

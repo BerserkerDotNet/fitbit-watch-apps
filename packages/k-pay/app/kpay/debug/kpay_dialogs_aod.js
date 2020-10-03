@@ -1,5 +1,5 @@
 /*
-* K·Pay Integration Library - v1.3.3 - Copyright Kiezel 2019
+* K·Pay Integration Library - v3.0.0 - Copyright Kiezel 2020
 * Last Modified: 2019-12-20
 *
 * BECAUSE THE LIBRARY IS LICENSED FREE OF CHARGE, THERE IS NO 
@@ -39,16 +39,16 @@ import * as kc from './kpay_core.js';
 import * as kcfg from '../kpay_config.js';
 import * as kcm from '../../../common/kpay/kpay_common.js';
 
-var F = null, x = null, R = null, T = null, z = null, $ = null, nn = null, I = null, O = null, L = null, en = !1, an = !1;
+var F = null, x = null, M = null, R = null, T = null, X = null, Z = null, O = null, z = null, I = null, $ = !1, nn = !1;
 
-function N() {
-    console.log("KPay_dialogs - kpay_dialogs initialize called!"), display.addEventListener("change", ln), 
+function L() {
+    console.log("KPay_dialogs - kpay_dialogs initialize called!"), display.addEventListener("change", tn), 
     me.permissions.granted("access_internet") || (console.log("KPay - ERROR: internet permission not enabled!"), 
-    B(gettext("InternetRequired"))), kc.kp8(U, H, j);
+    H(gettext("InternetRequired"))), kc.kp8(N, U, j);
 }
 
-function U(n) {
-    console.log("KPay_dialogs - _mainLibInitialized()"), n && kcfg.KPAY_SHOW_PAID_APP_POPUP && (console.log("KPay_dialogs - Fresh install detected; showing paid app popup..."), 
+function N(n) {
+    console.log("KPay_dialogs - _mainLibInitialized()"), n && kcfg.config.showPaidAppPopup && (console.log("KPay_dialogs - Fresh install detected; showing paid app popup..."), 
     G());
 }
 
@@ -61,16 +61,16 @@ function q(n, e) {
 }
 
 function G() {
-    on(), $ = J("paidAppPopup"), J("btnPaidAppOk").onclick = function(n) {
-        q($, !1), tn();
+    an(), X = J("paidAppPopup"), J("btnPaidAppOk").onclick = function(n) {
+        q(X, !1), on();
     }, J("btnPaidAppAlreadyPaid").onclick = function(n) {
-        nn = J("alreadyPaidPopup"), J("btnAlreadyPaidOk").onclick = function(n) {
-            q(nn, !1), tn();
-        }, q(nn, !0), q($, !1);
-    }, q($, !0);
+        Z = J("alreadyPaidPopup"), J("btnAlreadyPaidOk").onclick = function(n) {
+            q(Z, !1), on();
+        }, q(Z, !0), q(X, !1);
+    }, q(X, !0);
 }
 
-function H(n, e) {
+function U(n, e) {
     switch (console.log("KPay_dialogs - _handleEvent(e == " + n + ", extraData == " + e + ")"), 
     n) {
       case 5:
@@ -86,63 +86,63 @@ function H(n, e) {
     }
 }
 
-function B(n) {
-    on(), console.log("KPay_dialogs - _showError() - message == " + n), F || (F = J("kpay_errorDialog"), 
-    x = J("kpay_errorMessage")), x.text = n, Q(), q(F, !0), X();
+function H(n) {
+    an(), console.log("KPay_dialogs - _showError() - message == " + n), F || (F = J("kpay_errorDialog"), 
+    x = J("kpay_errorMessage")), x.text = n, B(), q(F, !0), V();
 }
 
 function W(n, e) {
-    q(nn, !1), q($, !1), on(), console.log("KPay_dialogs - _showTrialEnded() - message == " + n + "; code == " + e), 
-    R || (R = J("kpay_trialEndedDialog"), T = J("kpay_trialEndedMessage"), z = J("kpay_trialEndedCode")), 
-    z.text = Z(e), T.text = n, Q(), q(R, !0), X();
+    q(Z, !1), q(X, !1), an(), console.log("KPay_dialogs - _showTrialEnded() - message == " + n + "; code == " + e), 
+    M || (M = J("kpay_trialEndedDialog"), R = J("kpay_trialEndedMessage"), T = J("kpay_trialEndedCode")), 
+    T.text = en(e), R.text = n, B(), q(M, !0), V();
 }
 
 function Y() {
-    on(), console.log("KPay_dialogs - _showPurchaseSuccess()"), L || (L = J("kpay_purchaseSuccessDialog")), 
-    Q(), q(L, !0), R && q(R, !1), X("celebration-long"), setTimeout(j, 5e3);
+    an(), console.log("KPay_dialogs - _showPurchaseSuccess()"), I || (I = J("kpay_purchaseSuccessDialog")), 
+    B(), q(I, !0), M && q(M, !1), V("celebration-long"), setTimeout(j, 5e3);
 }
 
 function j() {
-    console.log("KPay_dialogs - _hideAlert()"), V(), F && q(F, !1), R && q(R, !1), L && q(L, !1), 
-    tn();
+    console.log("KPay_dialogs - _hideAlert()"), Q(), F && q(F, !1), M && q(M, !1), I && q(I, !1), 
+    on();
+}
+
+function B() {
+    O || (O = J("kpay_timeInDialog"), z = function() {
+        var n = new Date(), e = ("0" + n.getHours()).slice(-2) + ":" + ("0" + n.getMinutes()).slice(-2);
+        O.text = e;
+    }, clock.addEventListener("tick", function() {
+        O && "inline" == O.style.display && z();
+    })), O && (z(), q(O, !0));
 }
 
 function Q() {
-    I || (I = J("kpay_timeInDialog"), O = function() {
-        var n = new Date(), e = ("0" + n.getHours()).slice(-2) + ":" + ("0" + n.getMinutes()).slice(-2);
-        I.text = e;
-    }, clock.addEventListener("tick", function() {
-        I && "inline" == I.style.display && O();
-    })), I && (O(), q(I, !0));
+    O && q(O, !1);
 }
 
-function V() {
-    I && q(I, !1);
-}
-
-function X(n) {
+function V(n) {
     display.poke(), vibration.start(n || "nudge-max");
 }
 
-function Z(n) {
+function en(n) {
     for (var e = ""; n > 0; ) e = String.fromCharCode(16 + n % 10) + e, n = n / 10 | 0;
     return e;
 }
 
-function on() {
-    an || (en = display.aodAllowed, an = !0, en && me.permissions.granted("access_aod") && (console.log("KPay_dialogs - Setting display.aodAllowed to false"), 
+function an() {
+    nn || ($ = display.aodAllowed, nn = !0, $ && me.permissions.granted("access_aod") && (console.log("KPay_dialogs - Setting display.aodAllowed to false"), 
     display.aodAllowed = !1));
 }
 
-function tn() {
-    an = !1, en && me.permissions.granted("access_aod") && (console.log("KPay_dialogs - Setting display.aodAllowed to true"), 
+function on() {
+    nn = !1, $ && me.permissions.granted("access_aod") && (console.log("KPay_dialogs - Setting display.aodAllowed to true"), 
     display.aodAllowed = !0);
 }
 
-function ln() {
-    an && me.permissions.granted("access_aod") && display.aodAllowed && (console.error("ERROR: you are not allowed to set `display.aodAllowed` to `true` while K-Pay is showing dialogs!"), 
+function tn() {
+    nn && me.permissions.granted("access_aod") && display.aodAllowed && (console.error("ERROR: you are not allowed to set `display.aodAllowed` to `true` while K-Pay is showing dialogs!"), 
     display.aodAllowed = !1);
 }
 
-N();
+L();
 

@@ -19,7 +19,9 @@ const statsConfig = {
   activityImage: <ImageElement>document.getElementById("myStepsImg"),
   activityText: <TextElement>document.getElementById("mySteps"),
   caloriesText: <TextElement>document.getElementById("myCalories"),
+  caloriesImage: <ImageElement>document.getElementById("myCaloriesImg"),
   heartRateText: <TextElement>document.getElementById("myHeartRate"),
+  heartRateImage: <ImageElement>document.getElementById("myHeartRateImg"),
   statsVisibilityToggles: [bgImage, myClock],
   statsToToggle: <GraphicsElement[]>document.getElementsByClassName("stats"),
   shouldToggleStats: true,
@@ -29,10 +31,10 @@ const statsConfig = {
     "out-of-range": "white",
     "fat-burn": "yellow",
     cardio: "tomato",
-    peak: "darkred",
+    peak: "red",
     "below-custom": "white",
     custom: "yellow",
-    "above-custom": "darkred"
+    "above-custom": "red"
   }
 };
 
@@ -61,13 +63,9 @@ function settingsCallback(data: any) {
 
 function setFont(isSmall: boolean){
     if(isSmall) {
-      myClock.text = myClock.text;
-      myClock.style.fontFamily = "Seville-Regular";
-      myClockDate.style.fontFamily = "Seville-Regular";
+      myClock.style.fontFamily = "System-Light";
     } else {
-      myClock.text = myClock.text;
-      myClock.style.fontFamily = "Seville-Bold";
-      myClockDate.style.fontFamily = "Seville-Bold";
+      myClock.style.fontFamily = "System-Regular";
     }
 }
 

@@ -8,10 +8,10 @@ export function KPayProductStatus(props) {
   }
 
   return (
-    <Section title={<Text bold align="center">Product Status</Text>}>
-      <Text align="center">{`${kpayStatusMessage}`}</Text>
-      {endTrialVisible && <Toggle settingsKey="kpayPurchase" label="End Trial Now" />}
-    </Section>
+      <Section title={<Text bold align="center">Product Status</Text>}>
+        <Text align="center">{`${kpayStatusMessage}`}</Text>
+        {endTrialVisible && <Toggle settingsKey="kpayPurchase" label="End Trial Now" />}
+      </Section>
   );
 }
 

@@ -172,6 +172,6 @@ function valueOrEmptyPlaceholder(value : number | undefined | null) : string {
 function updateStatImagePosition(textElement: TextElement | undefined | null, img : ImageElement | undefined | null) {
   if(img && textElement){
     img.x = textElement.getBBox().x - img.getBBox().width;
-    img.y = textElement.getBBox().y;
+    img.y = textElement.getBBox().y+4;
   }
 }
